@@ -1,0 +1,6 @@
+
+<resources>
+    <style name="AppTheme.Custom" parent="Theme.AppCompat">
+        <item name="colorAccent">@color/progressbar</item>
+    </style>
+</resources>

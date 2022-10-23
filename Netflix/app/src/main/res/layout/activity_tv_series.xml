@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    tools:context=".MainScreens.TvSeries">
+    <include layout="@layout/tvseriestoolbar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="616dp"
+            android:id="@+id/TvSeriesRecyclerView"
+            android:layout_marginTop="50dp"/>
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/botom_nav"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:background="@color/bottom_navigation"
+            app:itemIconTint="@drawable/itemselected"
+            app:itemTextColor="@drawable/itemselected"
+            app:labelVisibilityMode="labeled"
+            app:menu="@menu/bottom_navigator" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
